@@ -1,0 +1,453 @@
+@import './utils.css';
+@import './reset.css';
+
+/* general */
+
+.txt-primary {
+    color: var(--text);
+}
+
+.white {
+    color: var(--white);
+}
+
+.bg-primary {
+    background-color: var(--primary);
+}
+
+/* spacing */
+.m-0 {
+    margin: 0;
+}
+.m-05 {
+    margin: 0.5rem;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+.m-2 {
+    margin: 2rem;
+}
+
+.mr-05 {
+    margin-right: 0.5rem;
+}
+
+.mr-1 {
+    margin-right: 1rem;
+}
+
+
+.ml-05 {
+    margin-left: 0.5rem;
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.ml-13 {
+    margin-left: 1.3rem;
+}
+
+.ml-2 {
+    margin-left: 2rem;
+}
+
+.mb-05 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+.mb-15 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.mb-4 {
+    margin-bottom: 4rem;
+}
+
+.mt-05 {
+    margin-top: 0.5rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mx-05 {
+    margin: 0 0.5rem;
+}
+
+.mx-1 {
+    margin: 0 1rem;
+}
+
+.mx-2 {
+    margin: 0 2rem;
+}
+
+.mx-3 {
+    margin: 0 3rem;
+}
+
+.mx-4 {
+    margin: 0 4rem;
+}
+
+.my-05 {
+    margin: 0.5rem 0;
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 2rem 0;
+}
+
+/* // PADDING */
+.p-0 {
+    padding: 0;
+}
+.p-05 {
+    padding: 0.5rem;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+.p-2 {
+    padding: 2rem;
+}
+.p-3 {
+    padding: 3rem;
+}
+
+.pr-05 {
+    padding-right: 0.5rem;
+}
+
+.pr-1 {
+    padding-right: 1rem;
+}
+
+.pr-2 {
+    padding-right: 2rem;
+}
+
+.pl-05 {
+    padding-left: 0.5rem;
+}
+
+.pl-1 {
+    padding-left: 1rem;
+}
+
+.pb-05 {
+    padding-bottom: 0.5rem;
+}
+
+.pb-1 {
+    padding-bottom: 1rem;
+}
+
+.pt-05 {
+    padding-top: 0.5rem;
+}
+
+.pt-1 {
+    padding-top: 1rem;
+}
+
+.px-05 {
+    padding: 0 0.5rem;
+}
+
+.px-1 {
+    padding: 0 1rem;
+}
+
+.px-2 {
+    padding: 0 2rem;
+}
+
+.px-3 {
+    padding: 0 3rem;
+}
+
+.px-4 {
+    padding: 0 4rem;
+}
+
+.px-5 {
+    padding: 0 5rem;
+}
+.px-6 {
+    padding: 0 6rem;
+}
+.px-7 {
+    padding: 0 7rem;
+}
+
+.py-05 {
+    padding: 0.5rem 0;
+}
+
+.py-1 {
+    padding: 1rem 0;
+}
+.py-2 {
+    padding: 2rem 0;
+}
+.py-3 {
+    padding: 3rem 0;
+}
+.py-4 {
+    padding: 4rem 0;
+}
+
+.height-1 {
+    height: 100%;
+}
+
+.height-50 {
+    height: 50px;
+}
+
+.height-100 {
+    height: 100px;
+}
+
+.height-200 {
+    height: 200px;
+}
+
+.height-300 {
+    height: 300px;
+}
+
+.width-1 {
+    width: 100%;
+}
+
+/* Other features */
+.pointer {
+    cursor: pointer;
+}
+
+/* Text */
+
+.underline {
+    text-decoration: underline;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.xx-small {
+    font-size: 10px;
+}
+
+.x-small {
+    font-size: 12px;
+}
+
+.small {
+    font-size: 14px;
+}
+
+.normal-size {
+    font-size: 16px;
+}
+
+.medium {
+    font-size: 18px;
+}
+
+.x-medium {
+    font-size: 24px;
+}
+
+.xx-medium {
+    font-size: 28px;
+}
+
+.large {
+    font-size: 30px;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.font-title {
+    font-family: 'Cormorant Garamond', serif !important;
+}
+
+.font-title-medium {
+    font-family: 'Cormorant Garamond', serif !important;
+    font-weight: 600 !important;
+}
+
+.bold {
+    font-weight: 600 !important;
+}
+
+.font-txt {
+    font-family: 'News Cycle', sans-serif !important;
+}
+
+.letter-space-1 {
+    letter-spacing: 1px;
+}
+
+.letter-space-2 {
+    letter-spacing: 2px;
+}
+
+.letter-space-5 {
+    letter-spacing: 5px;
+}
+
+.line-height-1 {
+    line-height: 20px;
+}
+
+/* position */
+
+.flex {
+    display: flex;
+}
+
+.flex-bet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.center-ver {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* containers */
+.general-container {
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.img-square-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    box-shadow: 1px 1px 8px rgb(68, 67, 67) ;
+    cursor: pointer;
+}
+
+.img-square-container .txt-center {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto; /* Center the text container */
+    padding: 10px;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+}
+
+.img-square-container:hover .txt-over {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    color: black;
+    font-size: 28px; /* Responsive font size */
+    font-weight: 600;
+    margin: 0 auto; /* Center the text container */
+    padding: 10px;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+    animation: fadeIn 0.2s linear ;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0%;}
+    50%  {opacity: 30%;}
+    to   {opacity: 100%;}
+}
+
+/* top bar */
+.txt-action {
+    transition: all 0.3s linear;
+} 
+.txt-action:hover {
+    border-top: solid 1px var(--text);
+} 
+
+.css-11b3ww9-MuiPaper-root-MuiAppBar-root {
+    background-color: var(--primary) !important;
+}
+
+.css-tddkv3-MuiPaper-root-MuiAppBar-root {
+    background-color: var(--primary) !important;
+}
+
+/* Banner */
+.banner-img-container {
+    overflow: hidden;
+    width: 100%;
+    height: 50vh;
+}
+
+/* popup */
+.popup-round {
+    position: absolute;
+    right: 1%;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px #ccc;
+    padding: 2rem 1rem;
+    border-radius: 5px;
+    height:70%;
+}
