@@ -1,6 +1,5 @@
 import React from 'react';
 
-// hello
 const Btn = () => {
     return (
         <div>
