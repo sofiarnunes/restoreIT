@@ -38,7 +38,7 @@ const TopBar = ({ window, id, handleSearch }) => {
               return(           
                 <ListItem key={index} disablePadding >
                   <ListItemButton sx={{ textAlign: 'center' }}>
-                    <ListItemText primary={info.name}/>
+                    <ListItemText primary={info.name} onClick={() => handleSearch(info.name)}/>
                   </ListItemButton>
                 </ListItem>
               )

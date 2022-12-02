@@ -12,12 +12,15 @@ import ImgCompleteList from '../../molecules/imgList/ImgCompleteList';
 import Footer from '../../molecules/footer/Footer';
 
 const HomePage = () => {
+    
+    const innerWidth = window.innerWidth;
+
 
     const [isShown, setIsShown] = useState(false);
     const [showType, setShownType] = useState([]);
     const [urlSelected, setUrlSelected] = useState('');
 
-    const scrollToRef = (ref) => window.scrollTo({top: ref.current.offsetTop + 200, behavior: 'smooth'})   
+    const scrollToRef = (ref) => window.scrollTo(innerWidth > 600 ? {top: ref.current.offsetTop + 200, behavior: 'smooth'} : {top: ref.current.offsetTop + 500, behavior: 'smooth'} )   
 
     const refSobre = useRef(null)
     const refServiços = useRef(null)
@@ -33,7 +36,6 @@ const HomePage = () => {
         }
     }
 
-    const innerWidth = window.innerWidth;
 
     return (
         <div>

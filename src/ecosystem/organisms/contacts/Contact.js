@@ -6,8 +6,11 @@ import Input from '../../atoms/input/Input';
 import Text from '../../atoms/text/Text';
 
 const Contact = ({currRef}) => {
+
+    const innerWidth = window.innerWidth;
+
     return (
-        <div className='mt-2 mb-1' style={{width: '50%', position: 'relative', left: '50%', transform: 'translate(-50%)'}} ref={currRef}>
+        <div className='mt-2 mb-1' style={innerWidth > 600 ? {width: '50%', position: 'relative', left: '50%', transform: 'translate(-50%)'} : {width: '100%', position: 'relative', left: '50%', transform: 'translate(-50%)'}} ref={currRef}>
             <Text txt='Contacte-nos' stl='x-medium mb-05'/> 
             <Text txt='Preencha o formulário e entraremos em contacto brevemente.' stl='small mb-2'/> 
             <Input id={FormType.contactForm} stl='width-1'/> 
