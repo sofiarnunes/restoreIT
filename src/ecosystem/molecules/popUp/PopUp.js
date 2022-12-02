@@ -11,6 +11,8 @@ import { ImgArray } from '../imgList/ImgArray';
 
 const PopUp = ({ close, content, urlSelected }) => {
     
+    const innerWidth = window.innerWidth;
+
     return (
         <div style={{width: '100%', height: '100vh', position: 'fixed', top: '0', left: '0', backgroundColor:'rgba(33, 37, 41, 0.8)', zIndex: '10000000'}}>
             <div style={{position: 'absolute', right: '2rem', top: '1.5rem', zIndex: '1000'}}>
@@ -24,7 +26,7 @@ const PopUp = ({ close, content, urlSelected }) => {
                     </div>
                 </div>
             :
-                <div className='popup-round' style={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '40%', overflowY: 'scroll'}}>
+                <div className='popup-round' style={innerWidth > 600 ? {position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '40%', overflowY: 'scroll'} : {position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '85%', overflowY: 'scroll'}}>
                     <div>
                         {content}
                     </div>
