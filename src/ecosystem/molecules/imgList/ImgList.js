@@ -4,8 +4,10 @@ import { ImgArray } from './ImgArray';
 
 const ImgList = ({id, setShow, setShownType}) => {
 
+    const innerWidth = window.innerWidth;
+
     return (
-        <div className='flex-bet flex-wrap'>
+        <div className={innerWidth > 600 ? 'flex-bet flex-wrap' : 'flex-center flex-wrap'}>
             {ImgArray.filter(item => item.id === id).map((data, index) => {
                 return (
                     <div className='img-square-container relative my-1' onClick={() => {setShow(); setShownType(data.imgIdentifier)}} key={index}>

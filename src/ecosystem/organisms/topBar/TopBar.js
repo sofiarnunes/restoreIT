@@ -55,6 +55,7 @@ const TopBar = ({ window, id, handleSearch }) => {
         <>
             <AppBar component="nav" sx={{ paddingLeft: {  xs: '1rem', md: '7rem' },  paddingRight: {  xs: '1rem', md: '7rem' } }}>
               <Toolbar className='bg-primary'>
+                <Box sx={{ display: { md: 'none', xs: 'flex' }, justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
                   <IconButton
                     aria-label="open drawer"
                     edge="start"
@@ -63,6 +64,8 @@ const TopBar = ({ window, id, handleSearch }) => {
                   >
                     <MenuIcon color='#000'/>
                   </IconButton>
+                  <Text txt='RESTORE IT' stl='ml-1 txt-primary x-medium font-title'/>
+                </Box>
 
                   <Box
                   sx={{ flexGrow: 1, alignItems: 'flex-end', mr: 2, display: {  xs: 'none', md: 'flex' } }} >

@@ -33,13 +33,15 @@ const HomePage = () => {
         }
     }
 
+    const innerWidth = window.innerWidth;
+
     return (
         <div>
             <TopBar id={MenuType.topBar} handleSearch={handleSearch}/>
-            <Box component="main" sx={{ p: 3 }}>
+            <Box component="main" sx={{ p: {  xs: 1, md: 3 } }}>
                 <Toolbar />
                 <Banner/>
-                <div className='general-container'>
+                <div className={innerWidth > 600 ? 'general-container-big' : 'general-container-small'}>
                     <About currRef={refSobre}/>
                     <Divider/>
                     <Services setShow={() => setIsShown(true)} setShownType={setShownType} currRef={refServiços}/>
