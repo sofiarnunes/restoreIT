@@ -95,7 +95,6 @@ export const ImgArray = [
         url: Paper4,
         title: 'Doc. 2',
         subtitle: 'Depois da intervenção',
-
         alt: 'paper restore 4',
     },
     {
@@ -133,20 +132,28 @@ export const ImgArray = [
         subtitle: 'Antes da intervenção',
         alt: 'paper restore 9',
     },
-    {
-        id: ImgType.servicesPaper,
-        url: Paper10,
-        title: 'Doc. 5',
-        subtitle: 'Antes da intervenção',
-        alt: 'paper restore 10',
-    },
-    {
-        id: ImgType.servicesPaper,
-        url: Paper11,
-        title: 'Doc. 5',
-        subtitle: 'Antes da intervenção',
-        alt: 'paper restore 11',
-    },
+
+
+
+
+
+
+
+
+    // {
+    //     id: ImgType.servicesPaper,
+    //     url: Paper10,
+    //     title: 'Doc. 5',
+    //     subtitle: 'Antes da intervenção',
+    //     alt: 'paper restore 10',
+    // },
+    // {
+    //     id: ImgType.servicesPaper,
+    //     url: Paper11,
+    //     title: 'Doc. 5',
+    //     subtitle: 'Antes da intervenção',
+    //     alt: 'paper restore 11',
+    // },
     {
         id: ImgType.servicesPaper,
         url: Paper12,

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
@@ -18,7 +18,7 @@ import Text from '../../atoms/text/Text';
 
 const drawerWidth = 240;
 
-const TopBar = ({ window, id }) => {
+const TopBar = ({ window, id, handleSearch }) => {
 
     const [mobileOpen, setMobileOpen] = useState(false);
   
@@ -36,9 +36,9 @@ const TopBar = ({ window, id }) => {
           {MenuArray.filter(item => item.id === id).map((data) => 
             data.tabs.map((info, index) => { 
               return(           
-                <ListItem key={index} disablePadding>
+                <ListItem key={index} disablePadding >
                   <ListItemButton sx={{ textAlign: 'center' }}>
-                    <ListItemText primary={info.name} />
+                    <ListItemText primary={info.name}/>
                   </ListItemButton>
                 </ListItem>
               )
@@ -50,7 +50,6 @@ const TopBar = ({ window, id }) => {
     );
   
     const container = window !== undefined ? () => window().document.body : undefined;
-  
 
     return (
         <>
@@ -78,6 +77,7 @@ const TopBar = ({ window, id }) => {
                             <div className='py-05 txt-action pointer normal-size uppercase txt-center' style={{width: '120px', position: 'relative', top: '10px'}}>
                               <Typography
                               className='txt-primary font-title-medium'
+                              onClick={() => handleSearch(info.name)}
                               >
                               {info.name}
                               </Typography>

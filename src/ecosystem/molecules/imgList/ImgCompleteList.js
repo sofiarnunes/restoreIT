@@ -12,7 +12,7 @@ const ImgCompleteList = ({id, setUrlSelected}) => {
 
     return (
         <Box sx={{ width: '100%', height: '100%'}}>
-            <ImageList variant="masonry" cols={2} gap={10}>
+            <ImageList  cols={2} gap={10} rowHeight={450}>
                 {ImgArray.filter(data => data.id === id || data.imgIdentifier === id).map((item) => (
                     <ImageListItem key={item.url} style={{cursor: 'pointer'}} onClick={() => setUrlSelected(item.url)}>
                         <img
@@ -25,15 +25,7 @@ const ImgCompleteList = ({id, setUrlSelected}) => {
                             <ImageListItemBar
                             title={item.title}
                             subtitle={item.subtitle}
-                            actionIcon={
-                                <IconButton
-                                    sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                                    aria-label={`info about ${item.title}`}
-                                >
-                                    <InfoIcon />
-                                </IconButton>
 
-                            }
                             />
                         
                     </ImageListItem>

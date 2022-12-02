@@ -326,6 +326,10 @@
     font-family: 'News Cycle', sans-serif !important;
 }
 
+.color-light {
+    color: var(--white);
+}
+
 .letter-space-1 {
     letter-spacing: 1px;
 }
@@ -469,3 +473,20 @@
     border-radius: 5px;
     height:70%;
 }
+
+/* footer */
+.footer-bar-container {
+    background-color: var(--text);
+    width: 100%;
+    height: 35px;
+}
+
+/* transition */
+.appear {
+    animation: appear 0.3s linear;
+}
+
+@keyframes appear {
+    from {right: -75%; opacity: 0}
+    to {right: -77%; opacity: 1}
+  }

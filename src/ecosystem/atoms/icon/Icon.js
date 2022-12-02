@@ -8,7 +8,7 @@ import IconButton from '@mui/material/IconButton';
 // Imports
 import { IconsArray } from './IconsArray';
 
-const Icon = ({ use, edge, id, color, disabled }) => {
+const Icon = ({ use, edge, id, color, disabled, useOver, useOut }) => {
 
     return (
         <>
@@ -19,6 +19,8 @@ const Icon = ({ use, edge, id, color, disabled }) => {
                         color="inherit"
                         aria-label={data.label}
                         onClick={use}
+                        onMouseOver={useOver}
+                        onMouseOut={useOut}
                         edge={edge}
                         disabled={disabled}
                         >
