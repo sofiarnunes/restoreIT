@@ -14,7 +14,7 @@ const Contact = ({currRef, alert, setAlert}) => {
             setTimeout(() => {
                 setAlert(false);
             }, 5000);
-        } 
+        }
     }, [alert]);
 
     return (
