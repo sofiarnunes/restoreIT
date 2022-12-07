@@ -1,0 +1,22 @@
+.css-1eqdgzv-MuiPaper-root-MuiSnackbarContent-root {
+    text-align: center !important;
+    font-family: 'SofiaProRegular' !important;
+}
+
+.success {
+    .css-1eqdgzv-MuiPaper-root-MuiSnackbarContent-root {
+        background-color: #4caf50 !important;
+    }
+}
+
+.alert-progress {
+    .css-1eqdgzv-MuiPaper-root-MuiSnackbarContent-root {
+        background-color: #fff !important;
+        color: #000 !important;
+        box-shadow: 1px 1px 4px #ccc !important;
+        width: 385px !important;
+        margin-right: 3rem;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+}

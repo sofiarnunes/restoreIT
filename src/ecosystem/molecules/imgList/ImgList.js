@@ -10,7 +10,7 @@ const ImgList = ({id, setShow, setShownType}) => {
         <div className={innerWidth > 600 ? 'flex-bet flex-wrap' : 'flex-center flex-wrap'}>
             {ImgArray.filter(item => item.id === id).map((data, index) => {
                 return (
-                    <div className='img-square-container relative my-1' onClick={() => {setShow(); setShownType(data.imgIdentifier)}} key={index}>
+                    <div className={innerWidth > 600 ? 'img-square-container relative my-1' : 'img-square-container relative m-1'} onClick={() => {setShow(); setShownType(data.imgIdentifier)}} key={index}>
                         <Img url={data.url} alt={data.alt} stl='width-1 center-ver'/>
                         {data.name !== '' ?
                             <div className='txt-over'>

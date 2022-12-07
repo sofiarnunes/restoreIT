@@ -10,6 +10,7 @@ import Contact from '../../organisms/contacts/Contact';
 import PopUp from '../../molecules/popUp/PopUp';
 import ImgCompleteList from '../../molecules/imgList/ImgCompleteList';
 import Footer from '../../molecules/footer/Footer';
+import SnackBar from '../../atoms/snackBar/SnackBar';
 
 const HomePage = () => {
     
@@ -17,6 +18,7 @@ const HomePage = () => {
 
 
     const [isShown, setIsShown] = useState(false);
+    const [isAlert, setIsAlert] = useState(false);
     const [showType, setShownType] = useState([]);
     const [urlSelected, setUrlSelected] = useState('');
 
@@ -48,13 +50,17 @@ const HomePage = () => {
                     <Divider/>
                     <Services setShow={() => setIsShown(true)} setShownType={setShownType} currRef={refServiços}/>
                     <Divider/>
-                    <Contact currRef={refContactos}/>
+                    <Contact currRef={refContactos} setAlert={setIsAlert} alert={isAlert}/>
                 </div>
             </Box>
             <Footer/>
 
             {isShown ?
                 <PopUp close={() => {urlSelected.length ? setUrlSelected('') : setIsShown(false)}} urlSelected={urlSelected} setUrlSelected={setUrlSelected} content={<ImgCompleteList id={showType} setUrlSelected={setUrlSelected}/>}/>
+            : null}
+
+            {isAlert  ?
+                <SnackBar txt='Mensagem enviada com sucesso.' alert={isAlert}/>
             : null}
         </div>
     );

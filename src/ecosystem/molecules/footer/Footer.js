@@ -11,9 +11,9 @@ const Footer = () => {
         <div className='footer-bar-container'>
             <div style={{width:'10%', height: '100%', position: 'relative', left: '50%', transform: 'translateX(-50%)'}} className='flex-around'>
                 <Icon id={IconType.instagramIcon} color='#fff'/>
-                <a href="https://www.linkedin.com/in/margarida-faustino-38335a184/" target="_blank" rel="noopener noreferrer">
+                {/* <a href="https://www.linkedin.com/in/margarida-faustino-38335a184/" target="_blank" rel="noopener noreferrer"> */}
                     <Icon id={IconType.linkedinIcon} color='#fff' use={() => console.log('go to link')}/>
-                </a>
+                {/* </a> */}
                 <Icon id={IconType.phoneIcon} color='#fff' useOver={() => setPhoneOver(true)} useOut={() => setPhoneOver(false)}/>
                 {phoneOver ?
                     <div style={{position:'absolute', right: '-77%', top: '50%', transform: 'translateY(-50%)'}} className='appear'>
